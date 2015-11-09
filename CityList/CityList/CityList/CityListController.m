@@ -89,6 +89,7 @@ NSInteger cityNameSort(id str1, id str2, void *context)
         _tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
         _tableView.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
 //        _tableView.backgroundColor = [UIColor clearColor];
+        _tableView.rowHeight = 44.0f;
         _tableView.dataSource = self;
         _tableView.delegate = self;
     }
@@ -99,9 +100,10 @@ NSInteger cityNameSort(id str1, id str2, void *context)
 - (UIView *)tipsView{
     if (!_tipsView) {
         _tipsView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 80, 80)];
-        _tipsView.backgroundColor = [UIColor redColor];
+        _tipsView.backgroundColor = [UIColor blackColor];
+        _tipsView.alpha = 0.2;
         _tipsView.layer.masksToBounds = YES;
-        _tipsView.layer.cornerRadius = 4;
+        _tipsView.layer.cornerRadius = 15;
         _tipsView.layer.borderColor = [UIColor whiteColor].CGColor;
         _tipsView.layer.borderWidth = 2;
     }
@@ -115,6 +117,7 @@ NSInteger cityNameSort(id str1, id str2, void *context)
         _tipsLabel.backgroundColor = [UIColor clearColor];
         _tipsLabel.font = [UIFont boldSystemFontOfSize:50.0f];
         _tipsLabel.textAlignment = NSTextAlignmentCenter;
+        _tipsLabel.textColor = [UIColor colorWithRed:132/155.0 green:132/155.0 blue:132/155.0 alpha:1.0f];
     }
     return _tipsLabel;
 }
@@ -209,8 +212,8 @@ NSInteger cityNameSort(id str1, id str2, void *context)
         cell.backgroundColor = [UIColor clearColor];
         cell.contentView.backgroundColor = [UIColor clearColor];
         cell.selectionStyle = UITableViewCellSelectionStyleGray;
-        cell.textLabel.textColor = [UIColor blackColor];
-        cell.textLabel.font = [UIFont systemFontOfSize:18.0f];
+        cell.textLabel.textColor = [UIColor colorWithRed:34/255.0 green:34/255.0 blue:34/255.0 alpha:0.8f];
+        cell.textLabel.font = [UIFont systemFontOfSize:13.0f];
     }
     
     cell.textLabel.text = city.city_name;
