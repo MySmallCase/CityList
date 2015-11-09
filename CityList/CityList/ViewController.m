@@ -7,8 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "CityListController.h"
 
-@interface ViewController ()
+@interface ViewController ()<CityListDelegate>
+
+@property (nonatomic,strong) UIButton *clickButton;
 
 @end
 
@@ -16,12 +19,36 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    [self.view addSubview:self.clickButton];
+    
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (UIButton *)clickButton{
+    if (!_clickButton) {
+        _clickButton = [[UIButton alloc] init];
+        [_clickButton setTitle:@"点击" forState:UIControlStateNormal];
+        [_clickButton setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
+        [_clickButton addTarget:self action:@selector(clickButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
+        _clickButton.titleLabel.font = [UIFont systemFontOfSize:14.0f];
+        _clickButton.frame = CGRectMake(20, 100, 150, 30);
+    }
+    return _clickButton;
 }
+
+
+- (void)clickButtonClicked:(UIButton *)sender{
+//    NSLog(@"clicked");
+    CityListController *cityList = [[CityListController alloc] init];
+    cityList.delegate = self;
+//    [self.navigationController pushViewController:cityList animated:YES];
+    [self presentViewController:cityList animated:YES completion:nil];
+}
+
+
+- (void)didClickedWithCityName:(NSString *)cityName{
+    [self.clickButton setTitle:cityName forState:UIControlStateNormal];
+}
+
 
 @end

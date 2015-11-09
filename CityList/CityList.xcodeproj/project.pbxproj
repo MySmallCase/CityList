@@ -15,6 +15,22 @@
 		1F3458C71BEB704E0013E5C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F3458C51BEB704E0013E5C9 /* LaunchScreen.storyboard */; };
 		1F3458D21BEB704E0013E5C9 /* CityListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F3458D11BEB704E0013E5C9 /* CityListTests.m */; };
 		1F3458DD1BEB704E0013E5C9 /* CityListUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F3458DC1BEB704E0013E5C9 /* CityListUITests.m */; };
+		1F3458ED1BEB71360013E5C9 /* CityListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F3458EC1BEB71360013E5C9 /* CityListController.m */; };
+		1F4A5E2F1BEC7CE20055FD50 /* citydict.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1F4A5E2E1BEC7CE20055FD50 /* citydict.plist */; };
+		1F4A5E421BEC82AE0055FD50 /* ChineseInclude.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A5E321BEC82AE0055FD50 /* ChineseInclude.m */; };
+		1F4A5E431BEC82AE0055FD50 /* ChineseToPinyinResource.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A5E341BEC82AE0055FD50 /* ChineseToPinyinResource.m */; };
+		1F4A5E441BEC82AE0055FD50 /* HanyuPinyinOutputFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A5E361BEC82AE0055FD50 /* HanyuPinyinOutputFormat.m */; };
+		1F4A5E451BEC82AE0055FD50 /* NSString+PinYin4Cocoa.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A5E381BEC82AE0055FD50 /* NSString+PinYin4Cocoa.m */; };
+		1F4A5E461BEC82AE0055FD50 /* PinyinFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A5E3A1BEC82AE0055FD50 /* PinyinFormatter.m */; };
+		1F4A5E471BEC82AE0055FD50 /* PinYinForObjc.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A5E3C1BEC82AE0055FD50 /* PinYinForObjc.m */; };
+		1F4A5E481BEC82AE0055FD50 /* PinyinHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A5E3E1BEC82AE0055FD50 /* PinyinHelper.m */; };
+		1F4A5E491BEC82AE0055FD50 /* unicode_to_hanyu_pinyin.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1F4A5E3F1BEC82AE0055FD50 /* unicode_to_hanyu_pinyin.txt */; };
+		1F4A5E4A1BEC82AE0055FD50 /* ZYPinYinSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A5E411BEC82AE0055FD50 /* ZYPinYinSearch.m */; };
+		1F4A5E4E1BEC8AFF0055FD50 /* city.json in Resources */ = {isa = PBXBuildFile; fileRef = 1F4A5E4D1BEC8AFF0055FD50 /* city.json */; };
+		1F4A5E551BEC9E2A0055FD50 /* Cities.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A5E541BEC9E2A0055FD50 /* Cities.m */; };
+		1F4A5E581BEC9E360055FD50 /* CityLists.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A5E571BEC9E360055FD50 /* CityLists.m */; };
+		1F4A5E5B1BEC9E420055FD50 /* City.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A5E5A1BEC9E420055FD50 /* City.m */; };
+		6B8D169D7624A5AFFBE6E6D7 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 67C07CBAE2B0B5DFC61AFA28 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +67,36 @@
 		1F3458D81BEB704E0013E5C9 /* CityListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CityListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F3458DC1BEB704E0013E5C9 /* CityListUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CityListUITests.m; sourceTree = "<group>"; };
 		1F3458DE1BEB704E0013E5C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F3458EB1BEB71360013E5C9 /* CityListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityListController.h; sourceTree = "<group>"; };
+		1F3458EC1BEB71360013E5C9 /* CityListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityListController.m; sourceTree = "<group>"; };
+		1F4A5E2E1BEC7CE20055FD50 /* citydict.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = citydict.plist; sourceTree = "<group>"; };
+		1F4A5E311BEC82AE0055FD50 /* ChineseInclude.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChineseInclude.h; sourceTree = "<group>"; };
+		1F4A5E321BEC82AE0055FD50 /* ChineseInclude.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChineseInclude.m; sourceTree = "<group>"; };
+		1F4A5E331BEC82AE0055FD50 /* ChineseToPinyinResource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChineseToPinyinResource.h; sourceTree = "<group>"; };
+		1F4A5E341BEC82AE0055FD50 /* ChineseToPinyinResource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChineseToPinyinResource.m; sourceTree = "<group>"; };
+		1F4A5E351BEC82AE0055FD50 /* HanyuPinyinOutputFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HanyuPinyinOutputFormat.h; sourceTree = "<group>"; };
+		1F4A5E361BEC82AE0055FD50 /* HanyuPinyinOutputFormat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HanyuPinyinOutputFormat.m; sourceTree = "<group>"; };
+		1F4A5E371BEC82AE0055FD50 /* NSString+PinYin4Cocoa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+PinYin4Cocoa.h"; sourceTree = "<group>"; };
+		1F4A5E381BEC82AE0055FD50 /* NSString+PinYin4Cocoa.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+PinYin4Cocoa.m"; sourceTree = "<group>"; };
+		1F4A5E391BEC82AE0055FD50 /* PinyinFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PinyinFormatter.h; sourceTree = "<group>"; };
+		1F4A5E3A1BEC82AE0055FD50 /* PinyinFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PinyinFormatter.m; sourceTree = "<group>"; };
+		1F4A5E3B1BEC82AE0055FD50 /* PinYinForObjc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PinYinForObjc.h; sourceTree = "<group>"; };
+		1F4A5E3C1BEC82AE0055FD50 /* PinYinForObjc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PinYinForObjc.m; sourceTree = "<group>"; };
+		1F4A5E3D1BEC82AE0055FD50 /* PinyinHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PinyinHelper.h; sourceTree = "<group>"; };
+		1F4A5E3E1BEC82AE0055FD50 /* PinyinHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PinyinHelper.m; sourceTree = "<group>"; };
+		1F4A5E3F1BEC82AE0055FD50 /* unicode_to_hanyu_pinyin.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = unicode_to_hanyu_pinyin.txt; sourceTree = "<group>"; };
+		1F4A5E401BEC82AE0055FD50 /* ZYPinYinSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYPinYinSearch.h; sourceTree = "<group>"; };
+		1F4A5E411BEC82AE0055FD50 /* ZYPinYinSearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYPinYinSearch.m; sourceTree = "<group>"; };
+		1F4A5E4D1BEC8AFF0055FD50 /* city.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = city.json; sourceTree = "<group>"; };
+		1F4A5E531BEC9E2A0055FD50 /* Cities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cities.h; sourceTree = "<group>"; };
+		1F4A5E541BEC9E2A0055FD50 /* Cities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cities.m; sourceTree = "<group>"; };
+		1F4A5E561BEC9E360055FD50 /* CityLists.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityLists.h; sourceTree = "<group>"; };
+		1F4A5E571BEC9E360055FD50 /* CityLists.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityLists.m; sourceTree = "<group>"; };
+		1F4A5E591BEC9E420055FD50 /* City.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = City.h; sourceTree = "<group>"; };
+		1F4A5E5A1BEC9E420055FD50 /* City.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = City.m; sourceTree = "<group>"; };
+		3CCE282F4D4692A2F63FC715 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		67C07CBAE2B0B5DFC61AFA28 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E669E9A41391336C0C8DE4CE /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B8D169D7624A5AFFBE6E6D7 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +132,8 @@
 				1F3458D01BEB704E0013E5C9 /* CityListTests */,
 				1F3458DB1BEB704E0013E5C9 /* CityListUITests */,
 				1F3458B51BEB704E0013E5C9 /* Products */,
+				A7E9BA41108C755CC0F34B0F /* Pods */,
+				815CD877A5784B32ED3E0D3E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +150,7 @@
 		1F3458B61BEB704E0013E5C9 /* CityList */ = {
 			isa = PBXGroup;
 			children = (
+				1F3458EA1BEB710B0013E5C9 /* CityList */,
 				1F3458BA1BEB704E0013E5C9 /* AppDelegate.h */,
 				1F3458BB1BEB704E0013E5C9 /* AppDelegate.m */,
 				1F3458BD1BEB704E0013E5C9 /* ViewController.h */,
@@ -140,6 +190,73 @@
 			path = CityListUITests;
 			sourceTree = "<group>";
 		};
+		1F3458EA1BEB710B0013E5C9 /* CityList */ = {
+			isa = PBXGroup;
+			children = (
+				1F4A5E301BEC82AE0055FD50 /* ZYPinYinSearchLib */,
+				1F4A5E521BEC8E340055FD50 /* Model */,
+				1F4A5E2E1BEC7CE20055FD50 /* citydict.plist */,
+				1F4A5E4D1BEC8AFF0055FD50 /* city.json */,
+				1F3458EB1BEB71360013E5C9 /* CityListController.h */,
+				1F3458EC1BEB71360013E5C9 /* CityListController.m */,
+			);
+			path = CityList;
+			sourceTree = "<group>";
+		};
+		1F4A5E301BEC82AE0055FD50 /* ZYPinYinSearchLib */ = {
+			isa = PBXGroup;
+			children = (
+				1F4A5E311BEC82AE0055FD50 /* ChineseInclude.h */,
+				1F4A5E321BEC82AE0055FD50 /* ChineseInclude.m */,
+				1F4A5E331BEC82AE0055FD50 /* ChineseToPinyinResource.h */,
+				1F4A5E341BEC82AE0055FD50 /* ChineseToPinyinResource.m */,
+				1F4A5E351BEC82AE0055FD50 /* HanyuPinyinOutputFormat.h */,
+				1F4A5E361BEC82AE0055FD50 /* HanyuPinyinOutputFormat.m */,
+				1F4A5E371BEC82AE0055FD50 /* NSString+PinYin4Cocoa.h */,
+				1F4A5E381BEC82AE0055FD50 /* NSString+PinYin4Cocoa.m */,
+				1F4A5E391BEC82AE0055FD50 /* PinyinFormatter.h */,
+				1F4A5E3A1BEC82AE0055FD50 /* PinyinFormatter.m */,
+				1F4A5E3B1BEC82AE0055FD50 /* PinYinForObjc.h */,
+				1F4A5E3C1BEC82AE0055FD50 /* PinYinForObjc.m */,
+				1F4A5E3D1BEC82AE0055FD50 /* PinyinHelper.h */,
+				1F4A5E3E1BEC82AE0055FD50 /* PinyinHelper.m */,
+				1F4A5E3F1BEC82AE0055FD50 /* unicode_to_hanyu_pinyin.txt */,
+				1F4A5E401BEC82AE0055FD50 /* ZYPinYinSearch.h */,
+				1F4A5E411BEC82AE0055FD50 /* ZYPinYinSearch.m */,
+			);
+			path = ZYPinYinSearchLib;
+			sourceTree = "<group>";
+		};
+		1F4A5E521BEC8E340055FD50 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1F4A5E531BEC9E2A0055FD50 /* Cities.h */,
+				1F4A5E541BEC9E2A0055FD50 /* Cities.m */,
+				1F4A5E561BEC9E360055FD50 /* CityLists.h */,
+				1F4A5E571BEC9E360055FD50 /* CityLists.m */,
+				1F4A5E591BEC9E420055FD50 /* City.h */,
+				1F4A5E5A1BEC9E420055FD50 /* City.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		815CD877A5784B32ED3E0D3E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				67C07CBAE2B0B5DFC61AFA28 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A7E9BA41108C755CC0F34B0F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E669E9A41391336C0C8DE4CE /* Pods.debug.xcconfig */,
+				3CCE282F4D4692A2F63FC715 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +264,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1F3458E11BEB704E0013E5C9 /* Build configuration list for PBXNativeTarget "CityList" */;
 			buildPhases = (
+				A2069217563D869282BF3CBB /* Check Pods Manifest.lock */,
 				1F3458B01BEB704E0013E5C9 /* Sources */,
 				1F3458B11BEB704E0013E5C9 /* Frameworks */,
 				1F3458B21BEB704E0013E5C9 /* Resources */,
+				84E46A5040B3069CFE1C2870 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -207,6 +326,7 @@
 				TargetAttributes = {
 					1F3458B31BEB704E0013E5C9 = {
 						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = 3V47L33Q25;
 					};
 					1F3458CC1BEB704E0013E5C9 = {
 						CreatedOnToolsVersion = 7.1;
@@ -243,9 +363,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F4A5E4E1BEC8AFF0055FD50 /* city.json in Resources */,
 				1F3458C71BEB704E0013E5C9 /* LaunchScreen.storyboard in Resources */,
+				1F4A5E2F1BEC7CE20055FD50 /* citydict.plist in Resources */,
 				1F3458C41BEB704E0013E5C9 /* Assets.xcassets in Resources */,
 				1F3458C21BEB704E0013E5C9 /* Main.storyboard in Resources */,
+				1F4A5E491BEC82AE0055FD50 /* unicode_to_hanyu_pinyin.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,14 +388,59 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		84E46A5040B3069CFE1C2870 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A2069217563D869282BF3CBB /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1F3458B01BEB704E0013E5C9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F4A5E481BEC82AE0055FD50 /* PinyinHelper.m in Sources */,
+				1F3458ED1BEB71360013E5C9 /* CityListController.m in Sources */,
+				1F4A5E551BEC9E2A0055FD50 /* Cities.m in Sources */,
 				1F3458BF1BEB704E0013E5C9 /* ViewController.m in Sources */,
+				1F4A5E4A1BEC82AE0055FD50 /* ZYPinYinSearch.m in Sources */,
 				1F3458BC1BEB704E0013E5C9 /* AppDelegate.m in Sources */,
+				1F4A5E421BEC82AE0055FD50 /* ChineseInclude.m in Sources */,
+				1F4A5E581BEC9E360055FD50 /* CityLists.m in Sources */,
 				1F3458B91BEB704E0013E5C9 /* main.m in Sources */,
+				1F4A5E5B1BEC9E420055FD50 /* City.m in Sources */,
+				1F4A5E451BEC82AE0055FD50 /* NSString+PinYin4Cocoa.m in Sources */,
+				1F4A5E471BEC82AE0055FD50 /* PinYinForObjc.m in Sources */,
+				1F4A5E431BEC82AE0055FD50 /* ChineseToPinyinResource.m in Sources */,
+				1F4A5E461BEC82AE0055FD50 /* PinyinFormatter.m in Sources */,
+				1F4A5E441BEC82AE0055FD50 /* HanyuPinyinOutputFormat.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,8 +577,10 @@
 		};
 		1F3458E21BEB704E0013E5C9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E669E9A41391336C0C8DE4CE /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = CityList/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = daiyanwang.CityList;
@@ -420,8 +590,10 @@
 		};
 		1F3458E31BEB704E0013E5C9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CCE282F4D4692A2F63FC715 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = CityList/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = daiyanwang.CityList;
@@ -496,6 +668,7 @@
 				1F3458E31BEB704E0013E5C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1F3458E41BEB704E0013E5C9 /* Build configuration list for PBXNativeTarget "CityListTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +677,7 @@
 				1F3458E61BEB704E0013E5C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1F3458E71BEB704E0013E5C9 /* Build configuration list for PBXNativeTarget "CityListUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +686,7 @@
 				1F3458E91BEB704E0013E5C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
