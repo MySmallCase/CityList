@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F0CA9771BF19BAD00F2D51C /* city.json in Resources */ = {isa = PBXBuildFile; fileRef = 1F0CA9761BF19BAD00F2D51C /* city.json */; };
 		1F3458B91BEB704E0013E5C9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F3458B81BEB704E0013E5C9 /* main.m */; };
 		1F3458BC1BEB704E0013E5C9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F3458BB1BEB704E0013E5C9 /* AppDelegate.m */; };
 		1F3458BF1BEB704E0013E5C9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F3458BE1BEB704E0013E5C9 /* ViewController.m */; };
@@ -16,7 +17,6 @@
 		1F3458D21BEB704E0013E5C9 /* CityListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F3458D11BEB704E0013E5C9 /* CityListTests.m */; };
 		1F3458DD1BEB704E0013E5C9 /* CityListUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F3458DC1BEB704E0013E5C9 /* CityListUITests.m */; };
 		1F3458ED1BEB71360013E5C9 /* CityListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F3458EC1BEB71360013E5C9 /* CityListController.m */; };
-		1F4A5E2F1BEC7CE20055FD50 /* citydict.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1F4A5E2E1BEC7CE20055FD50 /* citydict.plist */; };
 		1F4A5E421BEC82AE0055FD50 /* ChineseInclude.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A5E321BEC82AE0055FD50 /* ChineseInclude.m */; };
 		1F4A5E431BEC82AE0055FD50 /* ChineseToPinyinResource.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A5E341BEC82AE0055FD50 /* ChineseToPinyinResource.m */; };
 		1F4A5E441BEC82AE0055FD50 /* HanyuPinyinOutputFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A5E361BEC82AE0055FD50 /* HanyuPinyinOutputFormat.m */; };
@@ -26,7 +26,6 @@
 		1F4A5E481BEC82AE0055FD50 /* PinyinHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A5E3E1BEC82AE0055FD50 /* PinyinHelper.m */; };
 		1F4A5E491BEC82AE0055FD50 /* unicode_to_hanyu_pinyin.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1F4A5E3F1BEC82AE0055FD50 /* unicode_to_hanyu_pinyin.txt */; };
 		1F4A5E4A1BEC82AE0055FD50 /* ZYPinYinSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A5E411BEC82AE0055FD50 /* ZYPinYinSearch.m */; };
-		1F4A5E4E1BEC8AFF0055FD50 /* city.json in Resources */ = {isa = PBXBuildFile; fileRef = 1F4A5E4D1BEC8AFF0055FD50 /* city.json */; };
 		1F4A5E551BEC9E2A0055FD50 /* Cities.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A5E541BEC9E2A0055FD50 /* Cities.m */; };
 		1F4A5E581BEC9E360055FD50 /* CityLists.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A5E571BEC9E360055FD50 /* CityLists.m */; };
 		1F4A5E5B1BEC9E420055FD50 /* City.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A5E5A1BEC9E420055FD50 /* City.m */; };
@@ -51,6 +50,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1F0CA9761BF19BAD00F2D51C /* city.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = city.json; sourceTree = "<group>"; };
 		1F3458B41BEB704E0013E5C9 /* CityList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CityList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F3458B81BEB704E0013E5C9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1F3458BA1BEB704E0013E5C9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -69,7 +69,6 @@
 		1F3458DE1BEB704E0013E5C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F3458EB1BEB71360013E5C9 /* CityListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityListController.h; sourceTree = "<group>"; };
 		1F3458EC1BEB71360013E5C9 /* CityListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityListController.m; sourceTree = "<group>"; };
-		1F4A5E2E1BEC7CE20055FD50 /* citydict.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = citydict.plist; sourceTree = "<group>"; };
 		1F4A5E311BEC82AE0055FD50 /* ChineseInclude.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChineseInclude.h; sourceTree = "<group>"; };
 		1F4A5E321BEC82AE0055FD50 /* ChineseInclude.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChineseInclude.m; sourceTree = "<group>"; };
 		1F4A5E331BEC82AE0055FD50 /* ChineseToPinyinResource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChineseToPinyinResource.h; sourceTree = "<group>"; };
@@ -87,7 +86,6 @@
 		1F4A5E3F1BEC82AE0055FD50 /* unicode_to_hanyu_pinyin.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = unicode_to_hanyu_pinyin.txt; sourceTree = "<group>"; };
 		1F4A5E401BEC82AE0055FD50 /* ZYPinYinSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYPinYinSearch.h; sourceTree = "<group>"; };
 		1F4A5E411BEC82AE0055FD50 /* ZYPinYinSearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYPinYinSearch.m; sourceTree = "<group>"; };
-		1F4A5E4D1BEC8AFF0055FD50 /* city.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = city.json; sourceTree = "<group>"; };
 		1F4A5E531BEC9E2A0055FD50 /* Cities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cities.h; sourceTree = "<group>"; };
 		1F4A5E541BEC9E2A0055FD50 /* Cities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cities.m; sourceTree = "<group>"; };
 		1F4A5E561BEC9E360055FD50 /* CityLists.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityLists.h; sourceTree = "<group>"; };
@@ -195,8 +193,6 @@
 			children = (
 				1F4A5E301BEC82AE0055FD50 /* ZYPinYinSearchLib */,
 				1F4A5E521BEC8E340055FD50 /* Model */,
-				1F4A5E2E1BEC7CE20055FD50 /* citydict.plist */,
-				1F4A5E4D1BEC8AFF0055FD50 /* city.json */,
 				1F3458EB1BEB71360013E5C9 /* CityListController.h */,
 				1F3458EC1BEB71360013E5C9 /* CityListController.m */,
 			);
@@ -230,6 +226,7 @@
 		1F4A5E521BEC8E340055FD50 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				1F0CA9761BF19BAD00F2D51C /* city.json */,
 				1F4A5E531BEC9E2A0055FD50 /* Cities.h */,
 				1F4A5E541BEC9E2A0055FD50 /* Cities.m */,
 				1F4A5E561BEC9E360055FD50 /* CityLists.h */,
@@ -363,9 +360,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F4A5E4E1BEC8AFF0055FD50 /* city.json in Resources */,
 				1F3458C71BEB704E0013E5C9 /* LaunchScreen.storyboard in Resources */,
-				1F4A5E2F1BEC7CE20055FD50 /* citydict.plist in Resources */,
+				1F0CA9771BF19BAD00F2D51C /* city.json in Resources */,
 				1F3458C41BEB704E0013E5C9 /* Assets.xcassets in Resources */,
 				1F3458C21BEB704E0013E5C9 /* Main.storyboard in Resources */,
 				1F4A5E491BEC82AE0055FD50 /* unicode_to_hanyu_pinyin.txt in Resources */,

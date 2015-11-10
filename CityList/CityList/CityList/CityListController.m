@@ -234,7 +234,7 @@
         [self.keys removeAllObjects];
         [self.cities removeAllObjects];
         
-        NSMutableArray *resultArray = [[ZYPinYinSearch searchWithOriginalArray:self.allCities andSearchText:searchText andSearchByPropertyName:@""] mutableCopy];
+        NSArray *resultArray = [ZYPinYinSearch searchWithOriginalArray:self.allCities andSearchText:searchText andSearchByPropertyName:@""];
         for (NSString *city in resultArray) {
             NSString *pinYinHead = [PinYinForObjc chineseConvertToPinYinHead:city].uppercaseString;
             NSString *firstHeadPinYin = [pinYinHead substringToIndex:1];
@@ -259,7 +259,6 @@
             [self.cities addObject:[array mutableCopy]];
             [array removeAllObjects];
         }
-        [resultArray removeAllObjects];
         [self.tableView reloadData];
         self.tableView.tableFooterView = [[UIView alloc] init];
         
