@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1F0CA9771BF19BAD00F2D51C /* city.json in Resources */ = {isa = PBXBuildFile; fileRef = 1F0CA9761BF19BAD00F2D51C /* city.json */; };
+		1F0CA97D1BF1D6D100F2D51C /* CityGroupView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F0CA97C1BF1D6D100F2D51C /* CityGroupView.m */; };
 		1F3458B91BEB704E0013E5C9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F3458B81BEB704E0013E5C9 /* main.m */; };
 		1F3458BC1BEB704E0013E5C9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F3458BB1BEB704E0013E5C9 /* AppDelegate.m */; };
 		1F3458BF1BEB704E0013E5C9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F3458BE1BEB704E0013E5C9 /* ViewController.m */; };
@@ -51,6 +52,8 @@
 
 /* Begin PBXFileReference section */
 		1F0CA9761BF19BAD00F2D51C /* city.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = city.json; sourceTree = "<group>"; };
+		1F0CA97B1BF1D6D100F2D51C /* CityGroupView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityGroupView.h; sourceTree = "<group>"; };
+		1F0CA97C1BF1D6D100F2D51C /* CityGroupView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityGroupView.m; sourceTree = "<group>"; };
 		1F3458B41BEB704E0013E5C9 /* CityList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CityList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F3458B81BEB704E0013E5C9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1F3458BA1BEB704E0013E5C9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -195,6 +198,8 @@
 				1F4A5E521BEC8E340055FD50 /* Model */,
 				1F3458EB1BEB71360013E5C9 /* CityListController.h */,
 				1F3458EC1BEB71360013E5C9 /* CityListController.m */,
+				1F0CA97B1BF1D6D100F2D51C /* CityGroupView.h */,
+				1F0CA97C1BF1D6D100F2D51C /* CityGroupView.m */,
 			);
 			path = CityList;
 			sourceTree = "<group>";
@@ -434,6 +439,7 @@
 				1F4A5E5B1BEC9E420055FD50 /* City.m in Sources */,
 				1F4A5E451BEC82AE0055FD50 /* NSString+PinYin4Cocoa.m in Sources */,
 				1F4A5E471BEC82AE0055FD50 /* PinYinForObjc.m in Sources */,
+				1F0CA97D1BF1D6D100F2D51C /* CityGroupView.m in Sources */,
 				1F4A5E431BEC82AE0055FD50 /* ChineseToPinyinResource.m in Sources */,
 				1F4A5E461BEC82AE0055FD50 /* PinyinFormatter.m in Sources */,
 				1F4A5E441BEC82AE0055FD50 /* HanyuPinyinOutputFormat.m in Sources */,

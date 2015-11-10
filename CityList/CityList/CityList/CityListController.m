@@ -13,8 +13,9 @@
 #import "City.h"
 #import "ZYPinYinSearch.h"
 #import "PinYinForObjc.h"
+#import "CityGroupView.h"
 
-@interface CityListController ()<UITableViewDelegate,UITableViewDataSource,UITextFieldDelegate>
+@interface CityListController ()<UITableViewDelegate,UITableViewDataSource,UITextFieldDelegate,CityGroupViewDelegate>
 
 @property (nonatomic,strong) UITableView *tableView;
 
@@ -26,6 +27,14 @@
 @property (nonatomic,strong) NSMutableArray *cities; /**< */
 
 @property (nonatomic,strong) NSMutableArray *allCities; /**< 所有的cities*/
+
+@property (nonatomic,strong) UIView *headerView;
+
+@property (nonatomic,strong) CityGroupView *locationCityGroup; /**< 城市定位*/
+
+@property (nonatomic,strong) CityGroupView *historyGroup; /**< 最近访问城市*/
+
+@property (nonatomic,strong) CityGroupView *hotCityGroup; /**< 热门城市*/
 
 
 
@@ -74,7 +83,7 @@
     
     [self.view addSubview:self.tableView];
     
-    
+    [self initHeaderView];
     
 }
 
@@ -98,6 +107,65 @@
         for (City *city in array) {
             [self.allCities addObject:city.city_name];
         }
+    }
+}
+
+#pragma mark - UITableView Header
+- (void)initHeaderView{
+    
+    //定位城市
+    UILabel *locationLabel = [[UILabel alloc] initWithFrame:CGRectMake(10, 0, self.headerView.frame.size.width, 28)];
+    locationLabel.text = @"定位城市";
+    locationLabel.font = [UIFont systemFontOfSize:12.0f];
+    locationLabel.textColor = [UIColor colorWithRed:136 / 255.0 green:136 / 255.0 blue:136 / 255.0 alpha:1.0];
+    locationLabel.backgroundColor = [UIColor colorWithRed:241 / 255.0 green:241 / 255.0 blue:241 / 255.0 alpha:1.0];
+    [self.headerView addSubview:locationLabel];
+    
+    self.locationCityGroup = [[CityGroupView alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(locationLabel.frame), self.headerView.frame.size.width, 30) cities:@[@"武汉"]];
+    self.locationCityGroup.delegate = self;
+    [self.headerView addSubview:self.locationCityGroup];
+    
+    //最近访问城市
+    UILabel *historyLabel = [[UILabel alloc] initWithFrame:CGRectMake(10, CGRectGetMaxY(self.locationCityGroup.frame), self.headerView.frame.size.width, 28)];
+    historyLabel.text = @"最近访问城市";
+    historyLabel.font = [UIFont systemFontOfSize:12.0f];
+    historyLabel.textColor = [UIColor colorWithRed:136 / 255.0 green:136 / 255.0 blue:136 / 255.0 alpha:1.0];
+    historyLabel.backgroundColor = [UIColor colorWithRed:241 / 255.0 green:241 / 255.0 blue:241 / 255.0 alpha:1.0];
+    [self.headerView addSubview:historyLabel];
+    
+    self.historyGroup = [[CityGroupView alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(historyLabel.frame), self.headerView.frame.size.width, 30) cities:@[@"武汉",@"杭州",@"上海"]];
+    self.historyGroup.delegate = self;
+    [self.headerView addSubview:self.historyGroup];
+    
+    //热门城市
+    UILabel *hotLabel = [[UILabel alloc] initWithFrame:CGRectMake(10, CGRectGetMaxY(self.historyGroup.frame), self.headerView.frame.size.width, 28)];
+    hotLabel.text = @"热门城市";
+    hotLabel.font = [UIFont systemFontOfSize:12.0f];
+    hotLabel.textColor = [UIColor colorWithRed:136 / 255.0 green:136 / 255.0 blue:136 / 255.0 alpha:1.0];
+    hotLabel.backgroundColor = [UIColor colorWithRed:241 / 255.0 green:241 / 255.0 blue:241 / 255.0 alpha:1.0];
+    [self.headerView addSubview:hotLabel];
+    
+    NSArray *hotArray = @[@"上海",@"北京",@"广州",@"深圳",@"武汉",@"天津",@"西安",@"南京",@"杭州",@"成都",@"重庆"];
+    long row = hotArray.count / 3;
+    if (hotArray.count % 3 > 0) {
+        row += 1;
+    }
+    
+    CGFloat hotViewHeight = 45 * row;
+    self.hotCityGroup = [[CityGroupView alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(hotLabel.frame), self.headerView.frame.size.width, hotViewHeight) cities:hotArray];
+    self.hotCityGroup.delegate = self;
+    [self.headerView addSubview:self.hotCityGroup];
+    self.headerView.frame = CGRectMake(0, 0, self.tableView.frame.size.width, CGRectGetMaxY(self.hotCityGroup.frame));
+    
+    self.tableView.tableHeaderView.frame = self.headerView.frame;
+    self.tableView.tableHeaderView = self.headerView;
+}
+
+#pragma mark - CityGroupView delegate
+- (void)cityGroupView:(CityGroupView *)cityGroupView didClickedButtonTitle:(NSString *)title{
+    [self dismissViewControllerAnimated:YES completion:nil];
+    if ([self.delegate respondsToSelector:@selector(didClickedWithCityName:)]) {
+        [self.delegate didClickedWithCityName:title];
     }
 }
 
@@ -179,6 +247,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     static NSString *ID = @"cell";
+    
     NSString *cityName;
     if (self.searchText.text.length > 0) {
         NSArray *array = self.cities[indexPath.section];
@@ -260,12 +329,14 @@
             [array removeAllObjects];
         }
         [self.tableView reloadData];
+        self.tableView.tableHeaderView = nil;
         self.tableView.tableFooterView = [[UIView alloc] init];
         
     }else{
         [self.keys removeAllObjects];
         [self.cities removeAllObjects];
         [self.allCities removeAllObjects];
+        self.tableView.tableHeaderView = self.headerView;
         [self getCityData];
         [self.tableView reloadData];
     }
@@ -276,7 +347,7 @@
 - (UITableView *)tableView{
     if (!_tableView) {
         _tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
-        _tableView.frame = CGRectMake(0, self.searchView.frame.size.height, self.view.frame.size.width, self.view.frame.size.height - self.searchView.frame.size.height);
+        _tableView.frame = CGRectMake(0, self.searchView.frame.size.height + 20, self.view.frame.size.width, self.view.frame.size.height - self.searchView.frame.size.height - 20);
         _tableView.backgroundColor = [UIColor clearColor];
         _tableView.rowHeight = 44.0f;
         _tableView.dataSource = self;
@@ -317,7 +388,7 @@
 - (UIView *)searchView{
     if (!_searchView) {
         _searchView = [[UIView alloc] init];
-        _searchView.frame = CGRectMake(0, 0, self.view.frame.size.width, 44);
+        _searchView.frame = CGRectMake(0, 20, self.view.frame.size.width, 44);
         _searchView.backgroundColor = [UIColor colorWithRed:241 / 255.0 green:241 / 255.0 blue:241 / 255.0 alpha:1.0f];
         
     }
@@ -361,6 +432,15 @@
         [_searchText addTarget:self action:@selector(textChange:) forControlEvents:UIControlEventEditingChanged];
     }
     return _searchText;
+}
+
+- (UIView *)headerView{
+    if (!_headerView) {
+        _headerView = [[UIView alloc] init];
+        _headerView.frame = CGRectMake(0, 0, self.tableView.frame.size.width, 250);
+        _headerView.backgroundColor = [UIColor clearColor];
+    }
+    return _headerView;
 }
 
 

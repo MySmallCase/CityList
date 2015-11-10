@@ -18,6 +18,12 @@
 
 @interface CityListController : UIViewController
 
+@property (nonatomic,strong) NSArray *LocateCity; /**< 定位城市*/
+
+@property (nonatomic,strong) NSMutableArray *HistoryCities; /**< 最近访问城市*/
+
+@property (nonatomic,strong) NSMutableArray *HotCities; /**< 热门城市*/
+
 @property (nonatomic,weak) id<CityListDelegate> delegate;
 
 @end
