@@ -328,7 +328,7 @@
 				TargetAttributes = {
 					1F3458B31BEB704E0013E5C9 = {
 						CreatedOnToolsVersion = 7.1;
-						DevelopmentTeam = SK8LZNXD8J;
+						DevelopmentTeam = 3V47L33Q25;
 					};
 					1F3458CC1BEB704E0013E5C9 = {
 						CreatedOnToolsVersion = 7.1;
@@ -584,6 +584,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = CityList/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = daiyanwang.CityList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -597,6 +598,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = CityList/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = daiyanwang.CityList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
