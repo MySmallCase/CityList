@@ -8,12 +8,10 @@
 
 #import "CityListController.h"
 #import <MJExtension.h>
-#import "Cities.h"
-#import "CityLists.h"
-#import "City.h"
 #import "ZYPinYinSearch.h"
 #import "PinYinForObjc.h"
 #import "CityGroupView.h"
+#import "cityModel.h"
 
 @interface CityListController ()<UITableViewDelegate,UITableViewDataSource,UITextFieldDelegate,CityGroupViewDelegate>
 
@@ -92,19 +90,19 @@
     NSString *path = [[NSBundle mainBundle] pathForResource:@"city" ofType:@"json"];
     NSData *data = [[NSData alloc] initWithContentsOfFile:path];
     
-    Cities *cities = [Cities objectWithKeyValues:data];
+    allCity *cities = [allCity objectWithKeyValues:data];
     
-    self.citiesArray = [CityLists objectArrayWithKeyValuesArray:cities.cityList];
+    self.citiesArray = [CityList objectArrayWithKeyValuesArray:cities.cityList];
     
-    for (CityLists *list in self.citiesArray) {
-        NSArray *array = [City objectArrayWithKeyValuesArray:list.city];
+    for (CityList *list in self.citiesArray) {
+        NSArray *array = [Citys objectArrayWithKeyValuesArray:list.city];
         [self.cities addObject:array];
         [self.keys addObject:list.key];
     }
     
     for (int i = 0; i < self.cities.count; i ++) {
-        NSArray *array = [City objectArrayWithKeyValuesArray:self.cities[i]];
-        for (City *city in array) {
+        NSArray *array = [Citys objectArrayWithKeyValuesArray:self.cities[i]];
+        for (Citys *city in array) {
             [self.allCities addObject:city.city_name];
         }
     }
@@ -253,8 +251,8 @@
         NSArray *array = self.cities[indexPath.section];
         cityName = array[indexPath.row];
     }else{
-        NSArray *array = [City objectArrayWithKeyValuesArray:self.cities[indexPath.section]];
-        City *city = [City objectWithKeyValues:array[indexPath.row]];
+        NSArray *array = [Citys objectArrayWithKeyValuesArray:self.cities[indexPath.section]];
+        Citys *city = [Citys objectWithKeyValues:array[indexPath.row]];
         cityName = city.city_name;
     }
     
@@ -278,8 +276,8 @@
         NSArray *array = self.cities[indexPath.section];
         cityName = array[indexPath.row];
     }else{
-        NSArray *array = [City objectArrayWithKeyValuesArray:self.cities[indexPath.section]];
-        City *city = [City objectWithKeyValues:array[indexPath.row]];
+        NSArray *array = [Citys objectArrayWithKeyValuesArray:self.cities[indexPath.section]];
+        Citys *city = [Citys objectWithKeyValues:array[indexPath.row]];
         cityName = city.city_name;
     }
     if ([self.delegate respondsToSelector:@selector(didClickedWithCityName:)]) {
